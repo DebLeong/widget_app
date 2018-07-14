@@ -1,0 +1,184 @@
+/* AutoComplete */
+
+html, body, header, nav, h1, a,
+    ul, li, strong, main, button, i,
+    section, img, div, h2, p, form,
+    fieldset, label, input, textarea,
+    span, article, footer, time, small {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font: sans-serif;
+        color: inherit;
+        text-align: inherit;
+        text-decoration: inherit;
+        vertical-align: inherit;
+        box-sizing: inherit;
+        background: transparent;
+        list-style: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.interactive {
+    display: flex;
+    justify-content: space-around;
+}
+
+.autocomplete{
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    width: 191px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 0px 20px 20px 20px;
+    padding: 10px;
+    background-color: lightblue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.autocomplete > *{
+    margin-left: 30px;
+}
+
+.autocomplete > input{
+    margin: 10px 30px 0 30px;
+    border: 1px solid black;
+}
+
+.autocomplete li{
+    cursor: pointer;
+    list-style-type: square;
+}
+
+.auto-enter {
+    opacity: 0.01;
+    transform: translateY(100%);
+}
+
+.auto-enter.auto-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 700ms ease-in, transform 700ms ease-in;
+}
+
+.auto-leave {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.auto-leave.auto-leave-active {
+    opacity: 0.01;
+    transform: translateY(100%);
+    transition: opacity 700ms ease-in, transform 700ms ease-in;
+}
+
+body {
+    display: flex;
+    font-family: 'Righteous', cursive;
+    justify-content: space-around;
+}
+
+/* Clock */
+.clock {
+    font-size: 24px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    width: 550px;
+    border: 2px solid black;
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+    background-color: orange;
+}
+
+.clock p {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Tabs */
+.tabs {
+    width: 240px;
+    height: 200px;
+}
+
+.tab-header {
+    width: 200px;
+    height: 30px;
+    margin: 0 20px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;    
+}
+
+.tab-header > li {
+    width: 65px;
+    border-top: 2px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 4px;
+    text-align: center;
+    cursor: pointer;
+    background-color: lightpink;
+}
+
+.tab-header > li:first-child {
+    border-left: 2px solid black;
+}
+
+.tab-header > li:last-child {
+    border-right: 2px solid black;
+}
+
+.tab-header > li:hover {
+    background-color: black;
+    color: white;
+}
+
+.tab-content {
+    border: 2px solid black;
+    margin: 0 20px;
+}
+
+.tab-header > li > .active {
+    border-bottom: 0px;
+}
+
+.tab-content {
+    font-weight: bold;
+    color: white;
+    height: 192px;
+    margin: 0 20px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightpink;
+}
+
+/* Weather */
+.weather {
+    font-size: 24px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    width: 550px;
+    border: 2px solid black;
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+    background-color: lightgreen;
+}
